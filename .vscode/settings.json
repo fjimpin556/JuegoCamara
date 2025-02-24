@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "PruebaCamara.sln"
+    "dotnet.defaultSolution": "JuegoCamara.sln"
 }

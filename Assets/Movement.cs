@@ -34,6 +34,7 @@ public class Movement : MonoBehaviour
     public Transform firePoint; // Punto desde donde se disparan los proyectiles
     public GameObject crosshair; // Referencia a la mira
     public float projectileSpeed = 20f;
+    [SerializeField] GameObject weapon;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +44,7 @@ public class Movement : MonoBehaviour
 
         camera2.SetActive(false);
         crosshair.SetActive(false);
+        weapon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -77,12 +79,14 @@ public class Movement : MonoBehaviour
             {
                 camera2.SetActive(true);
                 crosshair.SetActive(true);
+                weapon.SetActive(true);
                 camera2D = true;
             }
             else
             {
                 camera2.SetActive(false);
                 crosshair.SetActive(false);
+                weapon.SetActive(false);
                 camera2D = false;
             }
         }
